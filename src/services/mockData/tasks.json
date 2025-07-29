@@ -5,7 +5,10 @@
     "listId": 1,
     "title": "Create wireframes for homepage",
     "completed": true,
-    "createdAt": "2024-01-16T10:30:00Z"
+    "createdAt": "2024-01-16T10:30:00Z",
+    "dueDate": "2024-01-20T23:59:59Z",
+    "assigneeId": 1,
+    "notes": "Include mobile and desktop versions. Focus on user flow and accessibility."
   },
   {
     "Id": 2,
@@ -13,7 +16,10 @@
     "listId": 1,
     "title": "Design new color palette",
     "completed": true,
-    "createdAt": "2024-01-17T14:20:00Z"
+    "createdAt": "2024-01-17T14:20:00Z",
+    "dueDate": "2024-01-25T23:59:59Z",
+    "assigneeId": 2,
+    "notes": "Consider brand guidelines and accessibility contrast ratios."
   },
   {
     "Id": 3,
@@ -21,7 +27,10 @@
     "listId": 2,
     "title": "Implement responsive navigation",
     "completed": false,
-    "createdAt": "2024-01-18T09:15:00Z"
+    "createdAt": "2024-01-18T09:15:00Z",
+    "dueDate": "2024-01-30T23:59:59Z",
+    "assigneeId": 3,
+    "notes": "Ensure mobile-first approach with hamburger menu for small screens."
   },
   {
     "Id": 4,
@@ -29,7 +38,10 @@
     "listId": 2,
     "title": "Optimize images for web",
     "completed": false,
-    "createdAt": "2024-01-19T16:45:00Z"
+    "createdAt": "2024-01-19T16:45:00Z",
+    "dueDate": "2024-02-05T23:59:59Z",
+    "assigneeId": 1,
+    "notes": "Use WebP format where possible. Target 80% quality for balance of size and quality."
   },
   {
     "Id": 5,
@@ -37,7 +49,10 @@
     "listId": 3,
     "title": "Set up development environment",
     "completed": true,
-    "createdAt": "2024-02-02T08:00:00Z"
+    "createdAt": "2024-02-02T08:00:00Z",
+    "dueDate": "2024-02-05T23:59:59Z",
+    "assigneeId": 4,
+    "notes": "Include Docker configuration and development database setup."
   },
   {
     "Id": 6,
@@ -45,7 +60,10 @@
     "listId": 4,
     "title": "Create user authentication flow",
     "completed": false,
-    "createdAt": "2024-02-03T11:30:00Z"
+    "createdAt": "2024-02-03T11:30:00Z",
+    "dueDate": "2024-02-15T23:59:59Z",
+    "assigneeId": 5,
+    "notes": "Implement OAuth integration with Google and GitHub. Include password recovery flow."
   },
   {
     "Id": 7,
@@ -53,7 +71,10 @@
     "listId": 4,
     "title": "Design app icon and splash screen",
     "completed": false,
-    "createdAt": "2024-02-04T13:15:00Z"
+    "createdAt": "2024-02-04T13:15:00Z",
+    "dueDate": "2024-02-12T23:59:59Z",
+    "assigneeId": 2,
+    "notes": "Create versions for iOS and Android. Follow platform-specific guidelines."
   },
   {
     "Id": 8,
@@ -61,7 +82,10 @@
     "listId": 5,
     "title": "Research target audience",
     "completed": true,
-    "createdAt": "2024-02-16T10:00:00Z"
+    "createdAt": "2024-02-16T10:00:00Z",
+    "dueDate": "2024-02-20T23:59:59Z",
+    "assigneeId": 6,
+    "notes": "Survey 200+ potential users. Focus on demographics and usage patterns."
   },
   {
     "Id": 9,
@@ -69,7 +93,10 @@
     "listId": 5,
     "title": "Create social media content calendar",
     "completed": false,
-    "createdAt": "2024-02-17T15:30:00Z"
+    "createdAt": "2024-02-17T15:30:00Z",
+    "dueDate": "2024-03-01T23:59:59Z",
+    "assigneeId": 6,
+    "notes": "Plan content for Q2 across Instagram, Twitter, and LinkedIn. Include key campaign dates."
   },
   {
     "Id": 10,
@@ -77,6 +104,9 @@
     "listId": 6,
     "title": "Document API endpoints",
     "completed": true,
-    "createdAt": "2024-03-02T09:00:00Z"
+    "createdAt": "2024-03-02T09:00:00Z",
+    "dueDate": "2024-03-10T23:59:59Z",
+    "assigneeId": 4,
+    "notes": "Use OpenAPI specification. Include authentication requirements and example requests."
   }
 ]

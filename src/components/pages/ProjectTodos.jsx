@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { toast } from "react-toastify";
+import { format } from "date-fns";
 import { taskService } from "@/services/api/taskService";
 import { taskListService } from "@/services/api/taskListService";
 import { activityService } from "@/services/api/activityService";
@@ -132,28 +133,45 @@ const ProjectTodos = () => {
     }
   };
 
-  const handleAddTask = async (title, listId = null) => {
+const handleAddTask = async (taskData) => {
     try {
+      // Handle both old string format and new object format for backward compatibility
+      const taskInfo = typeof taskData === 'string' 
+        ? { title: taskData, listId: null }
+        : taskData;
+        
       const newTask = await taskService.create({
         projectId: parseInt(projectId),
-        listId: listId,
-        title,
+        listId: taskInfo.listId,
+        title: taskInfo.title,
+        dueDate: taskInfo.dueDate,
+        assigneeId: taskInfo.assigneeId,
+        notes: taskInfo.notes,
         completed: false,
         createdAt: new Date().toISOString()
       });
       
       setTasks(prevTasks => [newTask, ...prevTasks]);
       
-      const listName = listId ? taskLists.find(l => l.Id === listId)?.name : null;
+      const listName = taskInfo.listId ? taskLists.find(l => l.Id === taskInfo.listId)?.name : null;
+      const assigneeName = taskInfo.assigneeId ? 
+        (await taskService.getTeamMembers()).find(m => m.Id === taskInfo.assigneeId)?.name : null;
+        
+      let details = `Task "${taskInfo.title}" was created`;
+      if (listName) details += ` in ${listName}`;
+      if (assigneeName) details += ` and assigned to ${assigneeName}`;
+      if (taskInfo.dueDate) details += ` with due date ${format(new Date(taskInfo.dueDate), "MMM d, yyyy")}`;
+      
       await activityService.create({
         projectId: parseInt(projectId),
         action: "task_created",
-        details: `Task "${title}" was created${listName ? ` in ${listName}` : ''}`,
+        details,
         timestamp: new Date().toISOString()
       });
       
       toast.success("Task created successfully!");
     } catch (err) {
+      console.error("Failed to create task:", err);
       toast.error("Failed to create task");
     }
   };
@@ -276,7 +294,7 @@ const ProjectTodos = () => {
       {/* Task Lists */}
       {taskLists.length > 0 && (
         <div className="space-y-4">
-          <AnimatePresence>
+<AnimatePresence>
             {taskLists.map((taskList) => {
               const listTasks = tasks.filter(task => task.listId === taskList.Id);
               return (
@@ -287,7 +305,11 @@ const ProjectTodos = () => {
                   onToggleCollapse={handleToggleListCollapse}
                   onDeleteList={handleDeleteList}
                   onEditList={setEditingList}
-                  onAddTask={handleAddTask}
+                  onAddTask={(taskData) => handleAddTask(
+                    typeof taskData === 'string' 
+                      ? { title: taskData, listId: taskList.Id }
+                      : { ...taskData, listId: taskList.Id }
+                  )}
                   onToggleTask={handleToggleTask}
                   onDeleteTask={handleDeleteTask}
                 />
@@ -308,7 +330,7 @@ const ProjectTodos = () => {
           
           <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3">
             <AnimatePresence>
-              {unlistedTasks.map((task) => (
+{unlistedTasks.map((task) => (
                 <TaskItem
                   key={task.Id}
                   task={task}
@@ -323,7 +345,7 @@ const ProjectTodos = () => {
 
       {/* General Add Task Form */}
       {!showListForm && !editingList && (
-        <AddTaskForm 
+<AddTaskForm 
           onSubmit={handleAddTask} 
           taskLists={taskLists}
         />
