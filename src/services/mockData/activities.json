@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "projectId": 1,
+    "action": "task_completed",
+    "details": "Task 'Create wireframes for homepage' was completed",
+    "timestamp": "2024-01-20T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "projectId": 1,
+    "action": "task_completed",
+    "details": "Task 'Design new color palette' was completed",
+    "timestamp": "2024-01-21T14:20:00Z"
+  },
+  {
+    "Id": 3,
+    "projectId": 1,
+    "action": "task_created",
+    "details": "Task 'Implement responsive navigation' was created",
+    "timestamp": "2024-01-22T09:15:00Z"
+  },
+  {
+    "Id": 4,
+    "projectId": 1,
+    "action": "task_created",
+    "details": "Task 'Optimize images for web' was created",
+    "timestamp": "2024-01-23T16:45:00Z"
+  },
+  {
+    "Id": 5,
+    "projectId": 2,
+    "action": "project_created",
+    "details": "Project 'Mobile App Launch' was created",
+    "timestamp": "2024-02-01T14:30:00Z"
+  },
+  {
+    "Id": 6,
+    "projectId": 2,
+    "action": "task_completed",
+    "details": "Task 'Set up development environment' was completed",
+    "timestamp": "2024-02-05T08:00:00Z"
+  },
+  {
+    "Id": 7,
+    "projectId": 2,
+    "action": "task_created",
+    "details": "Task 'Create user authentication flow' was created",
+    "timestamp": "2024-02-06T11:30:00Z"
+  },
+  {
+    "Id": 8,
+    "projectId": 3,
+    "action": "task_completed",
+    "details": "Task 'Research target audience' was completed",
+    "timestamp": "2024-02-18T10:00:00Z"
+  },
+  {
+    "Id": 9,
+    "projectId": 3,
+    "action": "task_created",
+    "details": "Task 'Create social media content calendar' was created",
+    "timestamp": "2024-02-19T15:30:00Z"
+  },
+  {
+    "Id": 10,
+    "projectId": 4,
+    "action": "task_completed",
+    "details": "Task 'Document API endpoints' was completed",
+    "timestamp": "2024-03-05T09:00:00Z"
+  }
+]

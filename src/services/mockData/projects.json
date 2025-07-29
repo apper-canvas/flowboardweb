@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "name": "Website Redesign",
+    "description": "Complete overhaul of company website with modern design",
+    "createdAt": "2024-01-15T10:00:00Z",
+    "memberCount": 8
+  },
+  {
+    "Id": 2,
+    "name": "Mobile App Launch",
+    "description": "Development and launch of iOS/Android mobile application",
+    "createdAt": "2024-02-01T14:30:00Z",
+    "memberCount": 12
+  },
+  {
+    "Id": 3,
+    "name": "Marketing Campaign Q2",
+    "description": "Strategic marketing initiatives for second quarter growth",
+    "createdAt": "2024-02-15T09:15:00Z",
+    "memberCount": 6
+  },
+  {
+    "Id": 4,
+    "name": "API Integration",
+    "description": "Third-party API integrations and system optimization",
+    "createdAt": "2024-03-01T11:45:00Z",
+    "memberCount": 4
+  }
+]
