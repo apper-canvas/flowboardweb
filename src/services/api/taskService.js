@@ -28,11 +28,12 @@ class TaskService {
   }
 
   async create(taskData) {
-    await this.delay();
+await this.delay();
     const maxId = Math.max(...this.tasks.map(t => t.Id), 0);
     const newTask = {
       Id: maxId + 1,
       ...taskData,
+      listId: taskData.listId || null,
       createdAt: taskData.createdAt || new Date().toISOString()
     };
     this.tasks.push(newTask);

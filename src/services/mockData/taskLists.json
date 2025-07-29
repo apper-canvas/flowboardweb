@@ -1,0 +1,56 @@
+[
+  {
+    "Id": 1,
+    "projectId": 1,
+    "name": "Design Tasks",
+    "description": "UI/UX design related tasks",
+    "color": "#EC4899",
+    "isCollapsed": false,
+    "createdAt": "2024-01-15T10:00:00Z"
+  },
+  {
+    "Id": 2,
+    "projectId": 1,
+    "name": "Development Tasks",
+    "description": "Frontend and backend development",
+    "color": "#3B82F6",
+    "isCollapsed": false,
+    "createdAt": "2024-01-15T10:00:00Z"
+  },
+  {
+    "Id": 3,
+    "projectId": 2,
+    "name": "Setup & Configuration",
+    "description": "Project setup and environment configuration",
+    "color": "#10B981",
+    "isCollapsed": false,
+    "createdAt": "2024-02-01T08:00:00Z"
+  },
+  {
+    "Id": 4,
+    "projectId": 2,
+    "name": "Feature Development",
+    "description": "Core app features and functionality",
+    "color": "#F59E0B",
+    "isCollapsed": false,
+    "createdAt": "2024-02-01T08:00:00Z"
+  },
+  {
+    "Id": 5,
+    "projectId": 3,
+    "name": "Marketing Tasks",
+    "description": "Marketing and promotional activities",
+    "color": "#EF4444",
+    "isCollapsed": false,
+    "createdAt": "2024-02-15T09:00:00Z"
+  },
+  {
+    "Id": 6,
+    "projectId": 4,
+    "name": "Documentation",
+    "description": "Technical documentation and guides",
+    "color": "#8B5CF6",
+    "isCollapsed": false,
+    "createdAt": "2024-03-01T09:00:00Z"
+  }
+]
