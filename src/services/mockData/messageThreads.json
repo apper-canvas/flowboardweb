@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "title": "Project Kickoff Discussion",
+    "author": "Sarah Chen",
+    "createdAt": "2024-01-15T09:00:00Z",
+    "lastActivity": "2024-01-15T14:30:00Z",
+    "replyCount": 5,
+    "initialMessage": "Welcome everyone! Let's use this thread to discuss our project goals and timeline. Please share your thoughts on the initial requirements."
+  },
+  {
+    "Id": 2,
+    "title": "Design System Updates",
+    "author": "Mike Johnson",
+    "createdAt": "2024-01-14T11:15:00Z",
+    "lastActivity": "2024-01-14T16:45:00Z",
+    "replyCount": 3,
+    "initialMessage": "I've updated our design system with new color palettes and typography scales. The components library has been refreshed accordingly."
+  },
+  {
+    "Id": 3,
+    "title": "Weekly Team Sync",
+    "author": "Emily Davis",
+    "createdAt": "2024-01-13T08:30:00Z",
+    "lastActivity": "2024-01-13T10:15:00Z",
+    "replyCount": 8,
+    "initialMessage": "Time for our weekly sync! Please share your progress, blockers, and what you're planning for the upcoming week."
+  },
+  {
+    "Id": 4,
+    "title": "Bug Report: Login Issues",
+    "author": "Alex Rodriguez",
+    "createdAt": "2024-01-12T15:20:00Z",
+    "lastActivity": "2024-01-12T17:30:00Z",
+    "replyCount": 2,
+    "initialMessage": "Users are reporting login issues on mobile devices. The authentication seems to fail intermittently. Has anyone else noticed this?"
+  },
+  {
+    "Id": 5,
+    "title": "Feature Request: Dark Mode",
+    "author": "Jessica Wong",
+    "createdAt": "2024-01-11T13:45:00Z",
+    "lastActivity": "2024-01-11T15:20:00Z",
+    "replyCount": 12,
+    "initialMessage": "Several users have requested a dark mode option. This could improve accessibility and user experience. What are your thoughts on implementation?"
+  }
+]
